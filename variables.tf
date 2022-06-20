@@ -99,8 +99,3 @@ variable "appVMCount" {
   type = number
   default = 2
 }
-
-#Add-WindowsFeature Web-Server 
-#Get-ChildItem "C:\inetpub\wwwroot" -recurse
-#Add-Content -Path "C:\inetpub\wwwroot\iisstart.htm" -Value $($env:computername)
-
