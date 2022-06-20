@@ -2,7 +2,7 @@
 ################################# General ##############################
 variable "subscription" { 
   type = string
-  default = "55fad57c-ebf2-4e69-83e4-0653a712f7be"
+  default = ""
 }
 
 variable "resourceGroupName" {
