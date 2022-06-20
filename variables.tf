@@ -85,7 +85,7 @@ variable "VMUserName" {
 variable "VMPassword" {
   type = string
   sensitive = true
-  default = "P@ssw0rd@1"
+  default = "P@ssw0rd@1"  # For Demo only. In production pass through .tfvars file or through command line.
 }
 
 #################### Virtual Machine - Web Tier ########################
