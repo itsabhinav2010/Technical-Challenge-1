@@ -67,7 +67,7 @@ module "ApplicationVM" {
 }
 
 # External Load Balancer - WEB
-module "ExternalLoadBalancer" {
+module "webExternalLoadBalancer" {
   source   = "./modules/externalLoadBalancer"
   rg       = var.resourceGroupName
   location = var.location
@@ -84,7 +84,7 @@ module "ExternalLoadBalancer" {
 }
 
 #Internal Load Balancer - APPLICATION
-module "InternalLoadBalancer" {
+module "appInternalLoadBalancer" {
   source   = "./modules/internalLoadBalancer"
   rg       = var.resourceGroupName
   location = var.location
@@ -102,7 +102,7 @@ module "InternalLoadBalancer" {
 }
 
 ### #Internal Load Balancer - Database (NOT PROVISIONED)
-# module "dbLoadBalancer" {
+# module "dbInternalLoadBalancer" {
 #   source   = "./modules/internalLoadBalancer"
 #   rg       = var.resourceGroupName
 #   location = var.location

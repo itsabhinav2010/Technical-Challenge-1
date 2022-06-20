@@ -4,6 +4,7 @@
 # .tfstate files
 *.tfstate
 *.tfstate.*
+*.tfplan
 
 # sensitive files - Allowed only for demo purpose
 #*.tfvars

@@ -7,7 +7,7 @@ variable "subscription" {
 
 variable "resourceGroupName" {
   type        = string
-  default     = "Test-RG"
+  default     = "RG"
   description = "Resource Group Name"
 }
 
